@@ -6,8 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transformers</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <h1>oi</h1>
+
+    <header class="header header--is-hidden">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/transformers_logo.png" alt="Autobots + Decepticons logo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Trailer</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Watch Now</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/transformers_title.png" alt="Disney+">
+            </div>
+            <h3 class="title--small text--tranformers">More than meets the eye.</h3>
+            <p class="text text--tranformers">
+                One of the most famous movie franchises <br>
+                back for more.
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <button class="button">Buy</button>
+                    <span class="text text--tranformers">R$ 32,90/mês*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <button class="button">Rent</button>
+                    <span class="text text--tranformers">R$ 45,90/mês*</span>
+                </li>
+            </ul>
+            <p class="text--small">
+                *Prices may be affected by currency rates.
+            </p>
+        </div>
+    </section>
+
+
+    <section class="factions">
+        <nav class="factions__tabs">
+            <button data-tab-button="autobots" class="factions__tabs__button factions__tabs__button--is-active">
+                Autobots
+            </button>
+            <button data-tab-button="decepticons" class="factions__tabs__button">
+                Decepticons
+            </button>
+        </nav>
+
+        <ul data-tab-button="autobots" class="factions__list factions__list--is-active">
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/autobots/optimus-prime.jpeg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-button="decepticons" class="factions__list">
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+            <li class="factions__list__item">
+                <img src="./dist/images/decepticons/megatron.jpeg" alt="">
+            </li>
+        </ul>
+
+    </section>
+
+
+
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>
