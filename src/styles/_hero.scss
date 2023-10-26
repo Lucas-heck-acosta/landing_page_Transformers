@@ -8,11 +8,16 @@
     margin-top: -100px;
 
 
-    @media (max-width: 768px) {
-        background-image: url(../images/hero_celular.png);
-        padding-top: calc(50vw + 25px);
-        background-size: contain;
-        background-repeat: no-repeat;
+    @media (max-width: 1023px) {
+        background-image: url(../images/hero_tablet.png);
+        
+
+        @media (max-width: 768px) {
+            padding-top: calc(50vw + 25px);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../images/hero_celular.png);
+        }
     }
 
     .button {
@@ -27,16 +32,21 @@
         &__branding {
             max-width: 320px;
             margin: 100px 24px 12px;
+
+            @media (max-width: 1023px) {
+                margin: 100px 24px 18px;
+
+                img {
+                    width: 464px;
+                }
+            }
             @media (max-width: 768px) {
                 margin: 20vw auto 18px;
 
                 img {
                     width: 264px;
                 }
-            }
-
-         
-            
+            }            
         }
 
         .title--small {
