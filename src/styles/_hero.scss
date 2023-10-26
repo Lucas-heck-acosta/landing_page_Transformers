@@ -23,12 +23,20 @@
     &__content {
         max-width: 640px;
 
+
         &__branding {
             max-width: 320px;
             margin: 100px 24px 12px;
             @media (max-width: 768px) {
-                max-width: 180px;
+                margin: 20vw auto 18px;
+
+                img {
+                    width: 264px;
+                }
             }
+
+         
+            
         }
 
         .title--small {

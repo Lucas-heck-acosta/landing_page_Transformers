@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (position < alturaHero)
         {
-            console.log('aaa');
             ocultarHeader();
         }
         else
@@ -26,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     {
         buttons[i].addEventListener('click', function(btn) {
             const tabTarget = btn.target.dataset.tabButton;
+
             const tab = document.querySelector(`[data-tab-id=${tabTarget}]`)
             hideTabs();
             tab.classList.add('factions__list--is-active');
