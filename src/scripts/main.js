@@ -3,19 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const questions = document.querySelectorAll('[data-faq-question');
     const heroSection = document.querySelector('.hero');
     
-    const alturaHero = heroSection.clientHeight;
+    const heroHeight = heroSection.clientHeight;
 
     //header
     window.addEventListener('scroll', function() {
         const position = window.scrollY;
 
-        if (position < alturaHero - 100)
+        if (position < heroHeight - 100)
         {
-            ocultarHeader();
+            hideHeader();
         }
         else
         {
-            exibirHeader();
+            showHeader();
         }
     })
 
@@ -34,30 +34,30 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.target.classList.add('factions__tabs__button--is-active');
         })
     }
-    /*
+    
 
     // FAQ accordion
     for (let i = 0; i < questions.length; i++)
     {
-        questions[i].addEventListener('click', abreFecha);
+        questions[i].addEventListener('click', toggleQuestion);
     }
-     */
+
 })
 
-function abreFecha(elemento) {
+function toggleQuestion(element) {
     const classe = 'faq__questions__item--is-open'
 
-    const elementoPai = elemento.target.parentNode;
+    const elementParent = element.target.parentNode;
 
-    elementoPai.classList.toggle(classe);
+    elementParent.classList.toggle(classe);
 }
 
-function ocultarHeader ()
+function hideHeader ()
 {
     const header = document.querySelector('header');
     header.classList.add('header--is-hidden');
 }
-function exibirHeader ()
+function showHeader ()
 {
     const header = document.querySelector('header');
     header.classList.remove('header--is-hidden');
