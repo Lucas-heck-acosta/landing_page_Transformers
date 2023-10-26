@@ -1,0 +1,46 @@
+.movies {
+    padding: 5.6vw;
+    margin-top: 60px;
+
+    
+    h2 {
+        text-align: center;
+    }
+    
+    &__list {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        justify-content: flex-start;
+
+        .button {
+            margin-top: 24px;
+        }
+
+        &__item {
+            text-align: center;
+            align-items: center;
+            padding: 40px 44px 44px;
+            max-width: 600px;
+            width: 100%;
+            margin-right: 20px;
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+
+            strong {
+                display: block;
+                margin-top: 24px;
+                white-space: normal;
+                height: 80px;
+            }
+        }
+    }
+
+    p {
+        height: 31%;
+        white-space: normal;
+    }
+    
+}

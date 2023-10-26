@@ -2,6 +2,7 @@
 @use 'hero';
 @use 'header';
 @use 'factions';
+@use 'movies';
 
 @font-face {
     font-family: transformers;
@@ -122,3 +123,28 @@ body {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+//from chat GPT
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #444;
+}
+

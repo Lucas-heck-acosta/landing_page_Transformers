@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const position = window.scrollY;
 
-        if (position < alturaHero)
+        if (position < alturaHero - 100)
         {
             ocultarHeader();
         }
