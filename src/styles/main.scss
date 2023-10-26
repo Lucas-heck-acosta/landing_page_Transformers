@@ -127,6 +127,39 @@ body {
 
 
 
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+
+    &--left {
+        text-align: right;
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    &__text_container {
+        padding: 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    
+}
+
+
+
+
 
 
 
